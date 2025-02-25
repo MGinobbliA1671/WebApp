@@ -1,0 +1,51 @@
+body {
+    font-family: Georgia, serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: url('pokemonBG.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+button:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(42, 240, 85);
+    transform: scale(1.1);
+}
+button:active {
+    background-color: #555;
+}
+
+p {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+    background: rgba(126, 126, 126, 0.6);
+    border-radius: 10px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.info-link {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.info-link a {
+    color: rgb(42, 92, 245);
+    text-decoration: none;
+}
