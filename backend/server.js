@@ -14,13 +14,12 @@ let clickCount = 0;
 const filePath = 'clicks.txt';
 
 
-// Ensure clicks.txt exists
 if (!fs.existsSync(filePath)) {
     fs.writeFileSync(filePath, '0');
 }
 
 
-// API to update click count
+
 app.post('/api/click', (req, res) => {
     clickCount++;
     fs.writeFile(filePath, clickCount.toString(), (err) => {
